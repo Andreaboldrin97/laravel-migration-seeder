@@ -13,7 +13,7 @@ class UpdateEditTableTrainAddTableTimes extends Migration
      */
     public function up()
     {
-        Schema::create('trains', function (Blueprint $table) {
+        Schema::table('trains', function (Blueprint $table) {
             $table->string('departure_time');
             $table->string('arrival_time');
         });

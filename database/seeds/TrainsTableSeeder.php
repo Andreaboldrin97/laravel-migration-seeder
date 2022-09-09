@@ -22,7 +22,9 @@ class TrainsTableSeeder extends Seeder
                 'train_code' => '9933t54',
                 'number_of_carriages' => 90,
                 'is_on_time' => 1,
-                'is_delete' => 0
+                'is_delete' => 0,
+                'departure_time' => '12:03',
+                'arrival_time' => '16:05'
             ],
             [
                 'company' => 'Treni italia',
@@ -31,7 +33,9 @@ class TrainsTableSeeder extends Seeder
                 'train_code' => '8933t54',
                 'number_of_carriages' => 100,
                 'is_on_time' => 0,
-                'is_delete' => 0
+                'is_delete' => 0,
+                'departure_time' => '12:03',
+                'arrival_time' => '16:05'
             ],
             [
                 'company' => 'Treni italia',
@@ -40,7 +44,9 @@ class TrainsTableSeeder extends Seeder
                 'train_code' => '7933t54',
                 'number_of_carriages' => 60,
                 'is_on_time' => 1,
-                'is_delete' => 0
+                'is_delete' => 0,
+                'departure_time' => '12:03',
+                'arrival_time' => '16:05'
             ],
             [
                 'company' => 'Treni italia',
@@ -49,7 +55,9 @@ class TrainsTableSeeder extends Seeder
                 'train_code' => '6933t54',
                 'number_of_carriages' => 90,
                 'is_on_time' => 0,
-                'is_delete' => 1
+                'is_delete' => 1,
+                'departure_time' => '12:03',
+                'arrival_time' => '16:05'
             ],
         ];
 
@@ -62,6 +70,8 @@ class TrainsTableSeeder extends Seeder
             $newTrain->number_of_carriages = $train['number_of_carriages'];
             $newTrain->is_on_time = $train['is_on_time'];
             $newTrain->is_delete = $train['is_delete'];
+            $newTrain->departure_time = $train['departure_time'];
+            $newTrain->arrival_time = $train['arrival_time'];
             $newTrain->save();
         }
     }
